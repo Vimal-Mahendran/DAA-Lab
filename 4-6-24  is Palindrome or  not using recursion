@@ -1,0 +1,14 @@
+def is_palindrome(s):
+    s = s.lower()
+    if len(s) < 2:
+        return True
+    if s[0] != s[-1]:
+        return False
+    return is_palindrome(s[1:-1])
+
+# Test the function
+string = "Madam"
+if is_palindrome(string):
+    print(f"{string} is a palindrome.")
+else:
+    print(f"{string} is not a palindrome.")
