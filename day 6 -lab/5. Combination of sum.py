@@ -12,7 +12,6 @@ def combinationSum(candidates, target):
     backtrack(0, target, [])
     return result
 
-# Example usage:
 candidates = [2, 3, 6, 7]
 target = 7
-print(combinationSum(candidates, target))  # Output: [[2, 2, 3], [7]]
+print(combinationSum(candidates, target))
