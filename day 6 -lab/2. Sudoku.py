@@ -1,10 +1,8 @@
 def is_valid_sudoku(board):
-    # Check rows
     for row in board:
         if not is_valid_unit(row):
             return False
     
-    # Check columns
     for col in range(9):
         column = [board[i][col] for i in range(9)]
         if not is_valid_unit(column):
